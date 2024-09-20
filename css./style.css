@@ -1,1 +1,111 @@
+/* making sure each section is talking the the full screen */
+section{
+    height: 100vh;
+}
+/* the header general attributes making it 100bvh to talk all the view height of the screen */
+#header {
+    /* background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'); */
+    background-image: url('../imgs/HomePage/Alex-Main.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white !important;
+}
+
+/* changing the color of the icon of the menu */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.dropdown-item:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn-dark
+{
+    background-color: black;
+    color: white;
+}
+
+/* the text over all attributes we put top here as 70% is not possible normally with bootstrap, well as far as i tried anyway */
+#hero-text {
+    top: 70%;
+    width: 100%;
+}
+
+/* The start of The Histroical Places */
+
+/* improving the title desing */
+.section-title {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 15px;
+    font-weight: 700;
+    width: fit-content;
+}
+
+/* To get that sexy line */
+.section-title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50;
+    /* width: 34.5rem; */
+    width: 100%;
+    height: 0.2rem;
+    background-color: lightskyblue;
+}
+
+/*fixing the cards and adding some animations*/
+.place-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+}
+
+/* Animating the cards */
+.place-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* for the sake of making the size of the imgs the same */
+.place-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+    #history,
+    #oriantles{
+        height: fit-content;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .place-card img {
+        height: 150px;
+    }
+}
+/* End of the histroical places */
+
+#oriantles{
+    background-image: url(../imgs/HomePage/Alex-BG.png);
+}
